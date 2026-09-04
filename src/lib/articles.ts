@@ -4,6 +4,8 @@ export const articles: Article[] = [
   {
     slug: "solar-power-banks-buying-guide",
     title: "Solar Power Banks: The Complete Buying Guide for Load-Shedding",
+    heroImage: "/images/solar-power-banks-buying-guide.jpg",
+    heroImageAlt: "A portable solar power bank with a foldable panel charging outdoors in the sun",
     category: "Power & Solar",
     excerpt:
       "Not all solar power banks are created equal. Here's how to tell a genuinely useful one from a gadget that will disappoint you during the next long outage.",
@@ -40,6 +42,28 @@ export const articles: Article[] = [
         "Not checking the input wattage, which determines how long a wall-socket top-up takes",
       ]},
       { type: "tip", text: "Charge your solar power bank from a wall socket the moment power returns. Treat the solar panel as a slow trickle-charge bonus, never your main charging plan." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$15–$60 depending on capacity and build quality"],
+        ["Realistic lifespan", "1–2 years of daily load-shedding use before noticeable capacity loss (roughly 300–500 charge cycles)"],
+        ["Hidden costs", "A replacement charging cable within the first year, and possibly a second unit if your household charges more devices than one bank can realistically cover"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Cross-check the advertised mAh rating against independent reviews of the exact model, not just the seller's description",
+        "Confirm the input wattage so you know roughly how long a wall-socket top-up will take",
+        "Check the output port type — USB-C PD is worth the extra cost if your phone supports it",
+        "Ask directly whether there's a warranty and what it covers",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "How to size a full home inverter and battery system", href: "/reviews/home-inverter-battery-backup-guide" },
+          { label: "Power banks built specifically for long outages", href: "/reviews/power-banks-for-long-load-shedding" },
+          { label: "Lithium-ion battery basics (Wikipedia)", href: "https://en.wikipedia.org/wiki/Lithium-ion_battery", external: true },
+        ],
+      },
       { type: "h2", text: "Our verdict" },
       { type: "p", text: "A solar power bank earns its place in your bag when you buy it for the battery capacity first and the solar panel second. If a listing leads with the panel and buries the mAh rating, that's usually a sign the battery isn't the star of the show." },
     ],
@@ -52,6 +76,8 @@ export const articles: Article[] = [
   {
     slug: "budget-smartphones-under-200-zimbabwe",
     title: "Best Budget Smartphones Under $200 for Zimbabwe (2026 Buying Guide)",
+    heroImage: "/images/budget-smartphones-under-200-zimbabwe.jpg",
+    heroImageAlt: "An affordable Android smartphone on a wooden desk showing its home screen",
     category: "Smartphones",
     excerpt:
       "A no-hype look at what you actually get for under $200, which specs matter more than the marketing sheet suggests, and where local buyers get caught out.",
@@ -84,6 +110,28 @@ export const articles: Article[] = [
         "Is the battery removable or, if not, what's the manufacturer's stated cycle life?",
       ]},
       { type: "tip", text: "Always insert your own SIM and load a webpage before finalizing a cash purchase — this instantly confirms the phone isn't network-locked or missing bands your carrier needs." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$80–$200 for a genuinely usable new or refurbished device"],
+        ["Realistic lifespan", "2–3 years of daily use before performance or battery life becomes frustrating"],
+        ["Hidden costs", "A protective case and screen protector (budget phones often ship without either), plus data bundle costs that don't change based on how much you paid for the phone"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Get the exact RAM and storage figures in writing, not just 'expandable to' language",
+        "Insert your own SIM and browse a page before paying",
+        "Confirm the phone supports your carrier's 4G bands",
+        "Ask what warranty exists and how a claim would actually work",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Dual-SIM phones for South Africa–Zimbabwe travel", href: "/reviews/dual-sim-phones-travelers-sa-zim" },
+          { label: "Refurbished vs new: what to check before buying", href: "/reviews/refurbished-vs-new-phones-zimbabwe" },
+          { label: "GSMA on mobile device standards", href: "https://en.wikipedia.org/wiki/Dual_SIM", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "At this price tier, buy for battery life and RAM first, camera quality last. A phone that lasts through a full day of load-shedding and doesn't lag when you switch between WhatsApp and a banking app will serve you better day-to-day than one with a slightly sharper camera." },
     ],
@@ -96,6 +144,8 @@ export const articles: Article[] = [
   {
     slug: "smart-plugs-load-shedding",
     title: "Do Smart Plugs Actually Help With Load-Shedding? Here's the Honest Answer",
+    heroImage: "/images/smart-plugs-load-shedding.jpg",
+    heroImageAlt: "A white smart plug connected to a wall socket with a phone showing its app",
     category: "Smart Home",
     excerpt:
       "Smart plugs are cheap and popular, but they can't do everything the adverts imply. Here's exactly what they help with and what they can't fix.",
@@ -123,6 +173,28 @@ export const articles: Article[] = [
         ["Local vs cloud control", "Cloud-dependent plugs stop working if the manufacturer's servers go down or if you have no internet"],
       ]},
       { type: "tip", text: "Never plug a smart plug into a high-draw appliance like a kettle, iron, or heater unless the listing explicitly states a load rating above 13A — most budget models are rated for lighting and small electronics only." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$5–$15 per plug"],
+        ["Realistic lifespan", "2–4 years of normal use — these have no battery to degrade, so failure is usually mechanical or app-support related"],
+        ["Hidden costs", "Essentially none, though very cheap unbranded units carry a small but real fire-safety risk that's worth paying a little more to avoid"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Confirm the stated load rating before plugging in anything beyond lighting or small electronics",
+        "Decide whether you need Wi-Fi (remote control) or Bluetooth (local only) is enough",
+        "Check whether control depends on the manufacturer's cloud servers or works locally",
+        "Look for a visible safety certification mark on the packaging",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Are smart bulbs worth it during load-shedding?", href: "/reviews/smart-bulbs-worth-it-zimbabwe" },
+          { label: "Building a simple smart home starter kit", href: "/reviews/smart-home-starter-kit-guide" },
+          { label: "Home automation basics (Wikipedia)", href: "https://en.wikipedia.org/wiki/Home_automation", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "Buy a smart plug for automation and convenience, not as a load-shedding solution. Pair it with an actual backup power source if your real goal is keeping devices running through an outage." },
     ],
@@ -135,6 +207,8 @@ export const articles: Article[] = [
   {
     slug: "budget-wireless-earbuds-under-30",
     title: "Budget Wireless Earbuds Under $30: What You're Actually Paying For",
+    heroImage: "/images/budget-wireless-earbuds-under-30.jpg",
+    heroImageAlt: "A pair of budget wireless earbuds resting in their open charging case",
     category: "Audio",
     excerpt:
       "At under $30, small spec differences translate into big real-world gaps. Here's how to read past the marketing and pick earbuds that will last.",
@@ -165,6 +239,28 @@ export const articles: Article[] = [
         "Assuming 'noise cancelling' printed on the box means active noise cancellation, when it usually just means passive ear-tip isolation",
       ]},
       { type: "tip", text: "If a listing doesn't state the Bluetooth version anywhere, assume it's an older, less efficient chipset and price your expectations accordingly." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$10–$30"],
+        ["Realistic lifespan", "12–18 months of daily use before battery life noticeably shortens"],
+        ["Hidden costs", "Replacement ear tips and, eventually, a replacement charging cable — factor in a small ongoing cost rather than treating it as a one-time purchase"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Confirm the Bluetooth version stated in the listing",
+        "Test the fit in person if at all possible — a poor fit is the top cause of buyer's regret",
+        "Check the IPX rating if you'll wear them exercising or commuting in the rain",
+        "Ask about warranty or return terms before paying",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Budget Bluetooth speakers under $50", href: "/reviews/budget-bluetooth-speakers-under-50" },
+          { label: "Smartwatch vs fitness band: which to buy", href: "/reviews/smartwatch-vs-fitness-band" },
+          { label: "How Bluetooth actually works (Wikipedia)", href: "https://en.wikipedia.org/wiki/Bluetooth", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "At under $30, prioritize Bluetooth version and stated battery life over brand name or box design — those two specs predict your daily experience far better than anything else on the packaging." },
     ],
@@ -177,6 +273,8 @@ export const articles: Article[] = [
   {
     slug: "fitness-trackers-everyday-zimbabweans",
     title: "Best Fitness Trackers for Everyday Use: A Practical Guide",
+    heroImage: "/images/fitness-trackers-everyday-zimbabweans.jpg",
+    heroImageAlt: "A slim fitness band on a wrist showing step count and heart rate",
     category: "Wearables",
     excerpt:
       "Most fitness tracker reviews are written for gym-obsessed early adopters. This one is written for people who just want accurate steps, sleep, and a battery that lasts.",
@@ -202,6 +300,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Buying and charging tips" },
       { type: "p", text: "Confirm the charging method before buying — proprietary charging clips are easy to lose and hard to replace locally, while USB-C charging bands are far more convenient if you ever need a replacement cable." },
       { type: "tip", text: "Set your tracker's sync frequency to a longer interval if you're trying to stretch battery life through a multi-day outage — constant background syncing is one of the biggest hidden battery drains." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$15–$40 for a solid basic band"],
+        ["Realistic lifespan", "1.5–2.5 years before battery capacity degrades enough to notice"],
+        ["Hidden costs", "A replacement strap eventually, since these wear out faster than the tracker itself on daily-wear bands"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Confirm the charging method — proprietary clips are easy to lose, USB-C is more convenient",
+        "Check that the companion app works reliably on your phone's Android version",
+        "Check the water-resistance rating matches how you'll actually use it",
+        "Read recent reviews on real-world battery life, not just the box claim",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Smartwatch vs fitness band: which to buy", href: "/reviews/smartwatch-vs-fitness-band" },
+          { label: "Budget wireless earbuds under $30", href: "/reviews/budget-wireless-earbuds-under-30" },
+          { label: "How activity trackers work (Wikipedia)", href: "https://en.wikipedia.org/wiki/Activity_tracker", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "For most everyday users, a basic band with a week of battery life and reliable step tracking will genuinely improve daily habits more than a feature-packed smartwatch you have to charge every night." },
     ],
@@ -214,6 +334,8 @@ export const articles: Article[] = [
   {
     slug: "home-inverter-battery-backup-guide",
     title: "How to Choose a Home Inverter and Battery Backup System",
+    heroImage: "/images/home-inverter-battery-backup-guide.jpg",
+    heroImageAlt: "A home inverter and battery backup unit installed against a wall",
     category: "Power & Solar",
     excerpt:
       "An inverter system is a serious purchase. Here's how to size one correctly instead of overpaying for capacity you don't need or underbuying and being disappointed.",
@@ -245,6 +367,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Installation tips" },
       { type: "p", text: "Always use a qualified electrician for the changeover switch that isolates your inverter circuit from the grid — this protects utility workers and your own equipment. Never attempt to wire an inverter directly into your household circuit without this isolation." },
       { type: "tip", text: "Get at least two written quotes from local installers, and ask each one to show their sizing calculation, not just a final number — this makes it easy to spot who's overselling capacity you don't need." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "From a few hundred dollars for an entry-level setup to well over a thousand for a larger lithium system"],
+        ["Realistic lifespan", "Lead-acid batteries: 2–3 years; lithium (LiFePO4): often 8–10+ years"],
+        ["Hidden costs", "Professional installation and changeover-switch wiring, plus eventual battery replacement — budget for this separately from the inverter itself"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Get your sizing calculation in writing from at least two installers",
+        "Confirm a qualified electrician will install the changeover switch",
+        "Compare lead-acid vs lithium total cost over 5 years, not just upfront price",
+        "Ask what happens to the warranty if you add solar panels later",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Portable solar panels for off-grid charging", href: "/reviews/portable-solar-panels-off-grid-guide" },
+          { label: "Car inverters as a mobile backup option", href: "/reviews/car-chargers-inverters-mobile-power" },
+          { label: "How uninterruptible power supplies work (Wikipedia)", href: "https://en.wikipedia.org/wiki/Uninterruptible_power_supply", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "Size for your essential list first, treat everything else as a stretch goal, and always leave headroom of about 20% above your calculated need so the system isn't running at its absolute limit every day." },
     ],
@@ -257,6 +401,8 @@ export const articles: Article[] = [
   {
     slug: "budget-laptops-students-africa",
     title: "Best Budget Laptops for Students in Africa: A No-Nonsense Guide",
+    heroImage: "/images/budget-laptops-students-africa.jpg",
+    heroImageAlt: "A student typing on a budget laptop at a desk with notebooks nearby",
     category: "Computing",
     excerpt:
       "Students don't need a gaming laptop. Here's what actually matters for coursework, research, and getting through a school year without the laptop dying on you.",
@@ -282,6 +428,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Software costs to budget for" },
       { type: "p", text: "Factor in the cost (or free alternative) for office software. Many students get by comfortably with free tools like Google Docs or LibreOffice rather than paying for a full office suite license, which is worth knowing before you assume that cost is mandatory." },
       { type: "tip", text: "Ask any refurbished-laptop seller for the battery's cycle count or health percentage in writing — a battery below 80% health will need replacing far sooner than you'd expect from a 'like new' listing." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$150–$450 depending on new vs refurbished and specification"],
+        ["Realistic lifespan", "3–5 years for coursework use, longer if the battery is in good health at purchase"],
+        ["Hidden costs", "A replacement charger (these are often the first thing to fail) and, if needed, licensed office software"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Prioritize SSD storage over a slightly faster processor",
+        "Ask for the battery health percentage or cycle count on any refurbished unit",
+        "Confirm it has the ports you actually need (USB, HDMI for a projector, etc.)",
+        "Check the return window in case something's wrong in the first week",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Budget tablets for online learning", href: "/reviews/budget-tablets-online-learning" },
+          { label: "Refurbished vs new: the honest breakdown", href: "/reviews/refurbished-vs-new-phones-zimbabwe" },
+          { label: "SSD vs HDD explained (Wikipedia)", href: "https://en.wikipedia.org/wiki/Solid-state_drive", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "For coursework, prioritize RAM, SSD storage, and battery life over processor speed or screen size. A well-specced refurbished business laptop very often beats a new budget laptop at the same price." },
     ],
@@ -294,6 +462,8 @@ export const articles: Article[] = [
   {
     slug: "smart-bulbs-worth-it-zimbabwe",
     title: "Smart Bulbs 101: Are They Worth It During Load-Shedding?",
+    heroImage: "/images/smart-bulbs-worth-it-zimbabwe.jpg",
+    heroImageAlt: "A smart LED bulb glowing warm white in a ceiling fixture",
     category: "Smart Home",
     excerpt:
       "Smart bulbs are fun, but they come with real trade-offs during frequent power cuts. Here's the honest breakdown before you fill your house with them.",
@@ -319,6 +489,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Realistic energy savings" },
       { type: "p", text: "Smart bulbs are typically LED-based, so most of your electricity savings actually come from the LED technology itself rather than the 'smart' features — a standard LED bulb without any smart function saves nearly as much power at a much lower price." },
       { type: "tip", text: "If you want the convenience without the wall-switch problem, look specifically for bulbs advertised as retaining Wi-Fi memory and auto-reconnecting after a power interruption — this is usually mentioned explicitly in better product listings." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$5–$15 per bulb"],
+        ["Realistic lifespan", "15,000–25,000 hours of use — several years even with regular evening use"],
+        ["Hidden costs", "Minimal — the main 'cost' is the wasted purchase if it ends up in a room where the wall switch gets turned off"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Confirm the base fitting (E27 or B22) matches your existing fixtures",
+        "Check whether it auto-reconnects to Wi-Fi after a power cut",
+        "Check whether it remembers its last on/off state after power returns",
+        "Confirm it works with the ecosystem (Google Home, Alexa, or its own app) you actually plan to use",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Do smart plugs actually help with load-shedding?", href: "/reviews/smart-plugs-load-shedding" },
+          { label: "Building a simple smart home starter kit", href: "/reviews/smart-home-starter-kit-guide" },
+          { label: "How LED lighting works (Wikipedia)", href: "https://en.wikipedia.org/wiki/Light-emitting_diode", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "Smart bulbs are a fun upgrade for rooms where the wall switch stays permanently on, like a hallway or bedside lamp. For rooms where household habit is to flip the switch, a smart switch or a simple LED bulb will serve you better." },
     ],
@@ -331,6 +523,8 @@ export const articles: Article[] = [
   {
     slug: "dual-sim-phones-travelers-sa-zim",
     title: "Best Dual-SIM Phones for Travelers Between South Africa and Zimbabwe",
+    heroImage: "/images/dual-sim-phones-travelers-sa-zim.jpg",
+    heroImageAlt: "A smartphone with its back cover off showing a dual-SIM tray",
     category: "Smartphones",
     excerpt:
       "Crossing the border regularly for work or family? Here's what to check in a dual-SIM phone before you buy, beyond just 'does it have two SIM slots'.",
@@ -355,6 +549,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Practical border-crossing tips" },
       { type: "p", text: "Keep your South African SIM registered under valid documentation (RICA registration is mandatory) well before travel, since registering at the border or last-minute can cause delays. Keep a small physical SIM ejector tool or paperclip in your bag — it's a tiny thing that causes real frustration when missing." },
       { type: "tip", text: "Label your two SIM slots in your phone's settings (e.g., 'ZW - Econet' and 'SA - Vodacom') so you don't accidentally send an international SMS or make a costly cross-network call by selecting the wrong SIM." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "Similar to a standard budget or mid-range phone, $100–$300, since dual-SIM is a feature, not a separate product tier"],
+        ["Realistic lifespan", "2–3 years, matching other budget and mid-range phones"],
+        ["Hidden costs", "Keeping two active SIMs means two sets of top-ups or contracts, plus RICA registration requirements to maintain on the South African side"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Confirm whether it's DSDA (both SIMs get 4G) or DSDS (one drops to 2G/3G)",
+        "Check it's a true triple-slot tray if you also need microSD storage",
+        "Verify 4G band compatibility with both Zimbabwean and South African networks",
+        "Test both SIMs are active and working before you actually travel",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Budget smartphones under $200", href: "/reviews/budget-smartphones-under-200-zimbabwe" },
+          { label: "Data-saving settings every phone owner should know", href: "/reviews/data-saving-apps-settings-smartphone" },
+          { label: "Dual-SIM technology explained (Wikipedia)", href: "https://en.wikipedia.org/wiki/Dual_SIM", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "For frequent cross-border travelers, prioritize confirmed DSDA support and correct band compatibility over brand name — a phone that quietly drops one SIM to 2G will cost you more in frustration than it saves in upfront price." },
     ],
@@ -367,6 +583,8 @@ export const articles: Article[] = [
   {
     slug: "portable-solar-panels-off-grid-guide",
     title: "Portable Solar Panels: A Buyer's Guide for Off-Grid Living",
+    heroImage: "/images/portable-solar-panels-off-grid-guide.jpg",
+    heroImageAlt: "A folding portable solar panel angled toward the sun on grass",
     category: "Power & Solar",
     excerpt:
       "Foldable and portable solar panels look great in marketing photos. Here's how to judge real output before you buy one for camping, rural stays, or backup charging.",
@@ -397,6 +615,28 @@ export const articles: Article[] = [
         "Keep panels clean; dust buildup, common during Zimbabwe's dry season, measurably reduces output",
       ]},
       { type: "tip", text: "If you're pairing a portable panel with a power station, confirm the maximum input wattage the power station accepts — feeding it more watts than it can accept doesn't speed up charging, it just wastes potential." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$30–$300+ depending on wattage and build quality"],
+        ["Realistic lifespan", "5–10+ years for the solar cells themselves, though folding portable panels see more wear at the hinges and connectors than fixed rooftop panels"],
+        ["Hidden costs", "A separate charge controller if one isn't built in, plus connector adapters to match your power station or battery"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Confirm the output connector matches your charge controller or power station",
+        "Check whether a charge controller is built in or needs buying separately",
+        "Weigh foldability and weight against how often you'll actually carry it",
+        "Check the weather-resistance rating if it'll live outdoors",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Solar power banks: the complete buying guide", href: "/reviews/solar-power-banks-buying-guide" },
+          { label: "Sizing a full home inverter and battery system", href: "/reviews/home-inverter-battery-backup-guide" },
+          { label: "How photovoltaic solar panels work (Wikipedia)", href: "https://en.wikipedia.org/wiki/Photovoltaics", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "Buy portable solar panels based on your realistic daily charging need, not the biggest wattage number you can afford. A well-placed, correctly-angled smaller panel often outperforms a bigger one left flat in partial shade." },
     ],
@@ -409,6 +649,8 @@ export const articles: Article[] = [
   {
     slug: "budget-bluetooth-speakers-under-50",
     title: "Best Bluetooth Speakers Under $50: What Actually Determines Sound Quality",
+    heroImage: "/images/budget-bluetooth-speakers-under-50.jpg",
+    heroImageAlt: "A compact Bluetooth speaker sitting outdoors on a picnic table",
     category: "Audio",
     excerpt:
       "Wattage numbers on speaker boxes are notoriously unreliable. Here's what to actually check before buying a budget Bluetooth speaker.",
@@ -433,6 +675,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Where to use caution" },
       { type: "p", text: "Speakers claiming 'party mode' or 'bass boost' features sometimes achieve that boosted bass by sacrificing clarity at higher volumes, resulting in distortion. If you can, listen to a demo unit in-store before buying, especially at higher volumes where cheap drivers tend to distort first." },
       { type: "tip", text: "Charge a new Bluetooth speaker fully before first use and let the battery run down naturally at least once — this helps the battery gauge calibrate accurately for future charge estimates." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$10–$50"],
+        ["Realistic lifespan", "1.5–3 years of regular use"],
+        ["Hidden costs", "A replacement charging cable, and possibly a second speaker if you decide you want stereo pairing later"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Ignore the wattage number printed on the box entirely",
+        "Compare physical driver size across listings as a better proxy for sound quality",
+        "Check the IPX rating if it's headed outdoors or near water",
+        "Look for reviews specifically mentioning distortion at higher volumes",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Budget wireless earbuds under $30", href: "/reviews/budget-wireless-earbuds-under-30" },
+          { label: "Building a simple smart home starter kit", href: "/reviews/smart-home-starter-kit-guide" },
+          { label: "How loudspeakers work (Wikipedia)", href: "https://en.wikipedia.org/wiki/Loudspeaker", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "Ignore the wattage number on the box entirely. Focus on speaker size, verified battery life from reviews, and water resistance if relevant to how you'll actually use it." },
     ],
@@ -445,6 +709,8 @@ export const articles: Article[] = [
   {
     slug: "smartwatch-vs-fitness-band",
     title: "Smartwatch vs Fitness Band: Which Should You Actually Buy?",
+    heroImage: "/images/smartwatch-vs-fitness-band.jpg",
+    heroImageAlt: "A smartwatch and a slim fitness band side by side on a table",
     category: "Wearables",
     excerpt:
       "The two categories overlap more than marketing suggests, but the day-to-day experience is genuinely different. Here's how to decide.",
@@ -471,6 +737,28 @@ export const articles: Article[] = [
       { type: "h2", text: "The load-shedding angle" },
       { type: "p", text: "During long outages, a fitness band's week-long battery life is a genuine practical advantage — one less device competing for charging time when the power's back for a few hours. Smartwatch owners often find themselves having to choose between charging a phone or a watch during short power windows." },
       { type: "tip", text: "If you're unsure, start with a basic fitness band. It's cheaper to test whether you'll actually build the habit of checking a wrist device before committing to a pricier smartwatch." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "Fitness bands: $15–$40. Smartwatches: $40–$150+"],
+        ["Realistic lifespan", "Bands typically hold battery health a little longer; smartwatch batteries tend to degrade faster given daily charging cycles"],
+        ["Hidden costs", "Replacement straps for either, and a possible charging dock replacement for smartwatches with proprietary chargers"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Decide honestly whether you'll act on wrist notifications or just find them annoying",
+        "Confirm you're willing to charge nightly if you choose a smartwatch",
+        "Check phone compatibility (Android version, iOS version) before buying",
+        "If call support matters, confirm the specific model supports it — not all smartwatches do",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Best fitness trackers for everyday use", href: "/reviews/fitness-trackers-everyday-zimbabweans" },
+          { label: "Budget wireless earbuds under $30", href: "/reviews/budget-wireless-earbuds-under-30" },
+          { label: "Smartwatches explained (Wikipedia)", href: "https://en.wikipedia.org/wiki/Smartwatch", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "Choose a fitness band if battery life and simplicity matter most to you. Choose a smartwatch if you genuinely want app functionality and detailed notifications and are comfortable with nightly charging." },
     ],
@@ -483,6 +771,8 @@ export const articles: Article[] = [
   {
     slug: "power-banks-for-long-load-shedding",
     title: "Best Power Banks for Long Load-Shedding Hours",
+    heroImage: "/images/power-banks-for-long-load-shedding.jpg",
+    heroImageAlt: "A high-capacity power bank charging a phone and other devices at once",
     category: "Power & Solar",
     excerpt:
       "When outages stretch to 10+ hours, a small power bank won't cut it. Here's how to size and choose one that will actually get you through the day.",
@@ -508,6 +798,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Charging strategy during unpredictable schedules" },
       { type: "p", text: "Keep your power bank topped up during every available power window rather than waiting until it's empty — unpredictable load-shedding schedules mean you can't always count on a long charging window when you need one." },
       { type: "tip", text: "Buy a power bank with a visible percentage display rather than just a few LED dots — knowing you're at 43% rather than 'somewhere between two and three dots' makes planning your remaining power much easier." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$15–$50 depending on capacity and output ports"],
+        ["Realistic lifespan", "1.5–2 years (roughly 300–500 charge cycles) before capacity noticeably drops"],
+        ["Hidden costs", "A USB-C PD-capable cable if one isn't included, since a standard cable will bottleneck faster charging"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Calculate your real need based on 60–70% of the rated mAh, not the full number",
+        "Check for USB-C PD output if you'll charge modern phones or a laptop",
+        "Count the output ports against how many people will need power at once",
+        "Prefer a percentage display over a handful of LED dots",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Solar power banks: the complete buying guide", href: "/reviews/solar-power-banks-buying-guide" },
+          { label: "Car chargers and inverters for mobile power", href: "/reviews/car-chargers-inverters-mobile-power" },
+          { label: "USB-C and Power Delivery explained (Wikipedia)", href: "https://en.wikipedia.org/wiki/USB-C", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "For genuinely long outages, prioritize a higher-capacity bank with USB-C PD output and multiple ports over a smaller, cheaper one — the extra upfront cost pays for itself in fewer anxious low-battery moments." },
     ],
@@ -520,6 +832,8 @@ export const articles: Article[] = [
   {
     slug: "budget-home-security-cameras",
     title: "Home Security Cameras on a Budget: What Actually Works",
+    heroImage: "/images/budget-home-security-cameras.jpg",
+    heroImageAlt: "A small Wi-Fi security camera mounted on an exterior wall",
     category: "Smart Home",
     excerpt:
       "Budget security cameras vary hugely in reliability. Here's what to check so you're not left with useless footage right when you need it.",
@@ -546,6 +860,28 @@ export const articles: Article[] = [
       { type: "h2", text: "A realistic setup for load-shedding households" },
       { type: "p", text: "If Wi-Fi cameras are your only option, put your router on the same backup power source (inverter or UPS) as your camera system, otherwise the camera becomes useless exactly when you might need it most — during an outage when the property is unattended and vulnerable." },
       { type: "tip", text: "Test motion detection sensitivity settings in the first week of ownership and adjust them — most false-alert complaints come from default settings that are too sensitive, not a fundamentally bad camera." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$15–$40 per camera"],
+        ["Realistic lifespan", "2–4 years, though outdoor exposure can shorten this if the weatherproofing is poor"],
+        ["Hidden costs", "Cloud storage subscriptions after any free trial ends, or a microSD card for local storage, plus backup power for your router"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Decide upfront between local SD storage and a cloud subscription",
+        "Plan backup power for your router, not just the camera, if Wi-Fi-based",
+        "Check recent reviews for real night-vision range, not the marketing claim",
+        "Test and adjust motion sensitivity in the first week to cut false alerts",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Do smart plugs actually help with load-shedding?", href: "/reviews/smart-plugs-load-shedding" },
+          { label: "Building a simple smart home starter kit", href: "/reviews/smart-home-starter-kit-guide" },
+          { label: "How CCTV systems work (Wikipedia)", href: "https://en.wikipedia.org/wiki/Closed-circuit_television", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "Budget cameras can genuinely work, but only if you plan for the power and connectivity dependency upfront. A camera with no backup power plan is just an expensive ornament during the exact hours you need it most." },
     ],
@@ -558,6 +894,8 @@ export const articles: Article[] = [
   {
     slug: "budget-tablets-online-learning",
     title: "Best Budget Tablets for Online Learning",
+    heroImage: "/images/budget-tablets-online-learning.jpg",
+    heroImageAlt: "A student watching an online lesson on a tablet propped on a stand",
     category: "Computing",
     excerpt:
       "A tablet for online classes has different priorities than one for entertainment. Here's what to check before buying one for schoolwork.",
@@ -585,6 +923,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Buying tips" },
       { type: "p", text: "If typing essays is a regular need, budget for a basic Bluetooth keyboard alongside the tablet — it transforms the experience for written coursework at a relatively small extra cost." },
       { type: "tip", text: "Before buying, confirm your school or course platform's app actually runs well on tablets (some platforms are optimized primarily for desktop browsers) — check this with current students on the same course if possible." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$70–$200 for a tablet suited to coursework"],
+        ["Realistic lifespan", "2–3 years of regular school use"],
+        ["Hidden costs", "A Bluetooth keyboard if essay writing is regular, plus a protective case for daily transport"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Confirm at least 3GB RAM for smooth multitasking between apps",
+        "Check whether your course platform supports offline downloads",
+        "Choose at least a 10-inch screen for comfortable document reading",
+        "Confirm storage is enough for downloaded lesson videos, or expandable",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Budget laptops for students in Africa", href: "/reviews/budget-laptops-students-africa" },
+          { label: "Data-saving settings every phone owner should know", href: "/reviews/data-saving-apps-settings-smartphone" },
+          { label: "Tablet computers explained (Wikipedia)", href: "https://en.wikipedia.org/wiki/Tablet_computer", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "For pure reading, watching, and light app-based coursework, a budget tablet with good battery life and offline download support is excellent value. For essay-heavy or software-specific coursework, a budget laptop remains the safer choice." },
     ],
@@ -597,6 +957,8 @@ export const articles: Article[] = [
   {
     slug: "smart-home-starter-kit-guide",
     title: "How to Set Up a Simple Smart Home Starter Kit",
+    heroImage: "/images/smart-home-starter-kit-guide.jpg",
+    heroImageAlt: "A smartphone displaying a smart home app next to a bulb and plug",
     category: "Smart Home",
     excerpt:
       "You don't need to buy ten gadgets at once. Here's a sensible, budget-friendly order to build a smart home setup that actually gets used.",
@@ -623,6 +985,28 @@ export const articles: Article[] = [
       { type: "h2", text: "The load-shedding-specific consideration" },
       { type: "p", text: "Every smart home device is useless without power and, usually, internet. Before expanding your setup, make sure your router itself is on some form of backup power (even a small UPS) — otherwise your whole smart home goes offline the moment load-shedding starts, regardless of how good the individual devices are." },
       { type: "tip", text: "Keep a simple written list of which device is on which app and ecosystem as you add more gadgets — it's easy to forget after the fourth or fifth purchase, and troubleshooting becomes much harder without it." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$5–$15 per plug or bulb, $15–$40 for a starter camera"],
+        ["Realistic lifespan", "2–4 years per device, varying by category as covered in our individual guides"],
+        ["Hidden costs", "Possible cloud subscription fees for a camera, and the time cost of managing multiple apps if you mix ecosystems"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Pick one ecosystem (Google Home, Alexa, or a single manufacturer app) before buying anything",
+        "Start with one cheap device to prove you'll actually use the automation",
+        "Put your router on backup power before relying on any Wi-Fi-based device",
+        "Keep a simple written list of which device lives on which app",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Do smart plugs actually help with load-shedding?", href: "/reviews/smart-plugs-load-shedding" },
+          { label: "Are smart bulbs worth it during load-shedding?", href: "/reviews/smart-bulbs-worth-it-zimbabwe" },
+          { label: "Home automation basics (Wikipedia)", href: "https://en.wikipedia.org/wiki/Home_automation", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "Start small, prove to yourself you'll actually use the automation daily, and only then expand. A one-device smart home that gets used every day is more valuable than a ten-device setup gathering dust after the novelty wears off." },
     ],
@@ -635,6 +1019,8 @@ export const articles: Article[] = [
   {
     slug: "rechargeable-lanterns-torches-power-cuts",
     title: "Best Rechargeable Lanterns and Torches for Power Cuts",
+    heroImage: "/images/rechargeable-lanterns-torches-power-cuts.jpg",
+    heroImageAlt: "A rechargeable LED lantern glowing on a table during an evening power cut",
     category: "Power & Solar",
     excerpt:
       "Candles are a fire risk and phone flashlights drain your battery fast. Here's how to choose a rechargeable light that's actually built for regular load-shedding use.",
@@ -659,6 +1045,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Solar-charging lanterns: worth the extra cost?" },
       { type: "p", text: "A lantern with an integrated solar panel is a genuinely useful backup-of-a-backup, but like solar power banks, treat the panel as a slow trickle option, not your main charging plan. Prioritize a lantern with good wall-charging speed first, solar as a bonus feature second." },
       { type: "tip", text: "Keep at least one dedicated lantern charged and stored in a fixed, memorable spot rather than wherever it was last used — during an actual outage is the worst time to be searching the house in the dark for it." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "$8–$25 depending on brightness and battery capacity"],
+        ["Realistic lifespan", "Around 2 years (300–500 charge cycles) with regular load-shedding use"],
+        ["Hidden costs", "Minimal — occasionally a replacement charging cable"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Check for multiple brightness modes to stretch runtime when needed",
+        "Confirm the wall-charging time, not just the solar-charging claim",
+        "Treat any built-in solar panel as a bonus, not the main charging plan",
+        "Pick one fixed storage spot in the house and stick to it",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Solar power banks: the complete buying guide", href: "/reviews/solar-power-banks-buying-guide" },
+          { label: "Portable solar panels for off-grid charging", href: "/reviews/portable-solar-panels-off-grid-guide" },
+          { label: "How flashlights and LED lighting work (Wikipedia)", href: "https://en.wikipedia.org/wiki/Flashlight", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "For most households, one multi-brightness lantern for shared spaces plus one small torch per family member covers the realistic range of load-shedding lighting needs without overspending." },
     ],
@@ -671,6 +1079,8 @@ export const articles: Article[] = [
   {
     slug: "refurbished-vs-new-phones-zimbabwe",
     title: "Refurbished vs New Phones: What Buyers in Zimbabwe Should Know",
+    heroImage: "/images/refurbished-vs-new-phones-zimbabwe.jpg",
+    heroImageAlt: "Two similar-looking smartphones placed side by side for comparison",
     category: "Buying Advice",
     excerpt:
       "A refurbished phone can be genuinely excellent value or a costly mistake, depending entirely on questions most buyers never think to ask.",
@@ -703,6 +1113,28 @@ export const articles: Article[] = [
         "Reluctance to let you test the phone with your own SIM before paying",
       ]},
       { type: "tip", text: "Check the phone's IMEI against a free online IMEI checker before finalizing payment — this can flag blacklisted or reported-stolen devices before you're out of pocket." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "Usually 30–50% less than an equivalent new phone"],
+        ["Realistic lifespan", "Depends heavily on whether the battery was replaced during refurbishment — ask for the health percentage before assuming"],
+        ["Hidden costs", "A near-term battery replacement if health is below roughly 80% at purchase"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Ask for the battery health percentage or cycle count in writing",
+        "Confirm what warranty exists and exactly what it covers",
+        "Check the IMEI against a free online checker before paying",
+        "Test with your own SIM before finalizing payment",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Budget smartphones under $200", href: "/reviews/budget-smartphones-under-200-zimbabwe" },
+          { label: "Dual-SIM phones for cross-border travel", href: "/reviews/dual-sim-phones-travelers-sa-zim" },
+          { label: "What an IMEI number is (Wikipedia)", href: "https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "A refurbished phone from a seller who openly shares battery health, grading, and warranty terms is often better value than a new budget phone at the same price. One that dodges those questions is a real risk, regardless of how good the price looks." },
     ],
@@ -715,6 +1147,8 @@ export const articles: Article[] = [
   {
     slug: "car-chargers-inverters-mobile-power",
     title: "Best Car Chargers and Inverters for Mobile Power",
+    heroImage: "/images/car-chargers-inverters-mobile-power.jpg",
+    heroImageAlt: "A power inverter plugged into a car's dashboard socket charging a laptop",
     category: "Power & Solar",
     excerpt:
       "Your car can double as a backup charging station during an outage — if you choose the right charger or inverter for it. Here's how.",
@@ -740,6 +1174,28 @@ export const articles: Article[] = [
       { type: "h2", text: "Protecting your car battery" },
       { type: "p", text: "Running a power inverter for extended periods with the engine off will drain your car battery and can leave you unable to start the car. As a rule of thumb, keep the engine running for anything beyond quick phone charging, or invest in a dedicated jump-starter power bank as a safety net." },
       { type: "tip", text: "Check your car's fuse rating for the cigarette lighter socket before buying a high-wattage inverter — plugging in a device that draws more current than the fuse allows will simply blow the fuse rather than damage the inverter." },
+      { type: "h2", text: "Total cost of ownership" },
+      { type: "table", headers: ["Factor", "What to expect"], rows: [
+        ["Typical price band", "USB car chargers: $5–$15. Power inverters: $20–$100+ depending on wattage"],
+        ["Realistic lifespan", "3–5 years for either, assuming they aren't regularly overloaded"],
+        ["Hidden costs", "A drained car battery (and possible jump-start) if an inverter is run too long with the engine off, and occasional fuse replacement"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist" },
+      { type: "ol", items: [
+        "Check total combined output wattage across all USB ports before buying",
+        "Match the inverter's continuous wattage rating to what you actually plan to run",
+        "Check your car's cigarette lighter socket fuse rating first",
+        "Choose pure sine wave if you'll power a laptop or other sensitive electronics",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Sizing a full home inverter and battery system", href: "/reviews/home-inverter-battery-backup-guide" },
+          { label: "Power banks for long load-shedding hours", href: "/reviews/power-banks-for-long-load-shedding" },
+          { label: "How power inverters work (Wikipedia)", href: "https://en.wikipedia.org/wiki/Power_inverter", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "For phone and small device charging, a solid multi-port USB car charger covers most needs cheaply. Only step up to a power inverter if you specifically need to run laptop chargers or small AC appliances during outages, and always mind your car battery's health while doing so." },
     ],
@@ -752,6 +1208,8 @@ export const articles: Article[] = [
   {
     slug: "data-saving-apps-settings-smartphone",
     title: "Data-Saving Apps and Settings Every Smartphone Owner Should Know",
+    heroImage: "/images/data-saving-apps-settings-smartphone.jpg",
+    heroImageAlt: "A close-up of a smartphone settings screen showing data usage",
     category: "Buying Advice",
     excerpt:
       "You don't need a new phone to stretch your data bundle further. These settings and habits make a real, measurable difference.",
@@ -779,6 +1237,29 @@ export const articles: Article[] = [
       { type: "h2", text: "Browser-level savings" },
       { type: "p", text: "Chrome's built-in 'Lite mode' or similar data-saving browser modes compress pages before loading them, which can meaningfully reduce data use for regular web browsing, especially on image-heavy sites." },
       { type: "tip", text: "Check your phone's built-in data usage breakdown (Settings > Network & Internet > Data usage on most Android phones) monthly — it shows exactly which apps are consuming the most, which is far more useful than guessing." },
+      { type: "h2", text: "Realistic data savings by habit" },
+      { type: "table", headers: ["Habit", "Typical monthly saving", "Effort to set up"], rows: [
+        ["Disabling social media auto-play video", "Often the single biggest saving for regular social media users", "Under a minute per app"],
+        ["Setting WhatsApp media to Wi-Fi-only download", "Noticeable in active group chats", "Under a minute"],
+        ["Enabling Android Data Saver system-wide", "Moderate, mostly from background app data", "Under a minute"],
+        ["Lowering default streaming video quality", "Significant for regular video streamers", "A few minutes per app"],
+      ]},
+      { type: "h2", text: "Pre-purchase checklist (for a new phone)" },
+      { type: "ol", items: [
+        "Confirm the phone's Android version supports a built-in Data Saver mode",
+        "Set WhatsApp and social apps to Wi-Fi-only media download on day one",
+        "Turn off automatic app updates over mobile data",
+        "Check your data usage breakdown monthly to catch any app quietly consuming more than expected",
+      ]},
+      {
+        type: "links",
+        heading: "Related reading",
+        items: [
+          { label: "Budget smartphones under $200", href: "/reviews/budget-smartphones-under-200-zimbabwe" },
+          { label: "Dual-SIM phones for cross-border travel", href: "/reviews/dual-sim-phones-travelers-sa-zim" },
+          { label: "How mobile data caps work (Wikipedia)", href: "https://en.wikipedia.org/wiki/Data_cap", external: true },
+        ],
+      },
       { type: "h2", text: "Our take" },
       { type: "p", text: "The single highest-impact change for most people is disabling auto-play video across social apps and setting WhatsApp media to Wi-Fi-only download — both take under two minutes to set up and meaningfully extend how far a data bundle stretches." },
     ],

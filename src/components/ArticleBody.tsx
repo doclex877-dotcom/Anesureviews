@@ -1,4 +1,6 @@
 import { Block } from "@/lib/types";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function ArticleBody({ blocks }: { blocks: Block[] }) {
   return (
@@ -102,6 +104,66 @@ export default function ArticleBody({ blocks }: { blocks: Block[] }) {
                   💡 Anesu&apos;s tip
                 </p>
                 <p className="text-[15px] leading-7 text-amber-900">{block.text}</p>
+              </div>
+            );
+          case "image":
+            return (
+              <figure key={i} className="mb-7 -mx-1">
+                <div className="relative w-full overflow-hidden rounded-xl bg-slate-100 aspect-[16/9]">
+                  <Image
+                    src={block.src}
+                    alt={block.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                  />
+                </div>
+                {block.caption && (
+                  <figcaption className="mt-2 text-center text-xs text-slate-400">
+                    {block.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
+          case "links":
+            return (
+              <div
+                key={i}
+                className="mb-7 rounded-lg border border-blue-100 bg-blue-50/50 px-5 py-4"
+              >
+                {block.heading && (
+                  <p className="text-sm font-bold uppercase tracking-wide text-[#2563EB] mb-2">
+                    {block.heading}
+                  </p>
+                )}
+                {block.intro && (
+                  <p className="text-[15px] leading-7 text-slate-700 mb-2">{block.intro}</p>
+                )}
+                <ul className="space-y-1.5">
+                  {block.items.map((item, j) =>
+                    item.external ? (
+                      <li key={j}>
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          className="inline-flex items-center gap-1 font-bold text-[#2563EB] hover:underline"
+                        >
+                          {item.label} <span aria-hidden>↗</span>
+                        </a>
+                      </li>
+                    ) : (
+                      <li key={j}>
+                        <Link
+                          href={item.href}
+                          className="inline-flex items-center gap-1 font-bold text-[#2563EB] hover:underline"
+                        >
+                          {item.label} <span aria-hidden>→</span>
+                        </Link>
+                      </li>
+                    )
+                  )}
+                </ul>
               </div>
             );
           default:

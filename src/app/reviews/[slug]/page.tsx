@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { articles } from "@/lib/articles";
 import { site } from "@/lib/site";
@@ -27,6 +28,7 @@ export async function generateMetadata({
       description: article.excerpt,
       type: "article",
       publishedTime: article.date,
+      images: [{ url: article.heroImage }],
     },
   };
 }
@@ -93,6 +95,17 @@ export default async function ArticlePage({
               &middot; {article.readTime}
             </p>
           </div>
+        </div>
+
+        <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-xl bg-slate-100">
+          <Image
+            src={article.heroImage}
+            alt={article.heroImageAlt}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 768px"
+          />
         </div>
 
         <div className="mt-8">

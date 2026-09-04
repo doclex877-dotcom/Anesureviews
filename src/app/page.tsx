@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { articles } from "@/lib/articles";
 import { site } from "@/lib/site";
 import ArticleCard from "@/components/ArticleCard";
@@ -65,13 +66,15 @@ export default function Home() {
                 <span>{featured.readTime}</span>
               </div>
             </div>
-            <div className="md:col-span-2 flex items-center justify-center rounded-xl bg-gradient-to-br from-[#0B0F19] to-[#1e3a8a]">
-              <div className="p-8 text-center">
-                <span className="text-6xl">🔋</span>
-                <p className="mt-2 text-xs font-bold uppercase tracking-widest text-blue-200">
-                  {featured.category}
-                </p>
-              </div>
+            <div className="md:col-span-2 relative overflow-hidden rounded-xl bg-slate-100 aspect-[4/3] md:aspect-auto">
+              <Image
+                src={featured.heroImage}
+                alt={featured.heroImageAlt}
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 40vw"
+              />
             </div>
           </Link>
         </section>
