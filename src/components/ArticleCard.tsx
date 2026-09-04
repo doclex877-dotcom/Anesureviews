@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Article } from "@/lib/types";
+import SafeImage from "./SafeImage";
 
 const categoryColors: Record<string, string> = {
   "Power & Solar": "bg-amber-100 text-amber-800",
@@ -20,10 +20,9 @@ export default function ArticleCard({ article }: { article: Article }) {
       className="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
     >
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
-        <Image
+        <SafeImage
           src={article.heroImage}
           alt={article.heroImageAlt}
-          fill
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />

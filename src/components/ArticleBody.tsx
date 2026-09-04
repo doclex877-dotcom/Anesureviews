@@ -1,6 +1,6 @@
 import { Block } from "@/lib/types";
-import Image from "next/image";
 import Link from "next/link";
+import SafeImage from "./SafeImage";
 
 export default function ArticleBody({ blocks }: { blocks: Block[] }) {
   return (
@@ -110,10 +110,9 @@ export default function ArticleBody({ blocks }: { blocks: Block[] }) {
             return (
               <figure key={i} className="mb-7 -mx-1">
                 <div className="relative w-full overflow-hidden rounded-xl bg-slate-100 aspect-[16/9]">
-                  <Image
+                  <SafeImage
                     src={block.src}
                     alt={block.alt}
-                    fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 768px"
                   />

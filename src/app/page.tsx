@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { articles } from "@/lib/articles";
 import { site } from "@/lib/site";
 import ArticleCard from "@/components/ArticleCard";
 import AdSlot from "@/components/AdSlot";
+import SafeImage from "@/components/SafeImage";
 
 export default function Home() {
   const latest = articles.slice(0, 6);
@@ -66,11 +66,10 @@ export default function Home() {
                 <span>{featured.readTime}</span>
               </div>
             </div>
-            <div className="md:col-span-2 relative overflow-hidden rounded-xl bg-slate-100 aspect-[4/3] md:aspect-auto">
-              <Image
+            <div className="md:col-span-2 relative overflow-hidden rounded-xl bg-slate-100 aspect-[4/3]">
+              <SafeImage
                 src={featured.heroImage}
                 alt={featured.heroImageAlt}
-                fill
                 priority
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 40vw"

@@ -1,12 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { articles } from "@/lib/articles";
 import { site } from "@/lib/site";
 import ArticleBody from "@/components/ArticleBody";
 import ArticleCard from "@/components/ArticleCard";
 import AdSlot from "@/components/AdSlot";
+import SafeImage from "@/components/SafeImage";
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
@@ -98,10 +98,9 @@ export default async function ArticlePage({
         </div>
 
         <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-xl bg-slate-100">
-          <Image
+          <SafeImage
             src={article.heroImage}
             alt={article.heroImageAlt}
-            fill
             priority
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 768px"
