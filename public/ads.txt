@@ -1,0 +1,3 @@
+# ads.txt placeholder
+# Replace this file's contents with your real AdSense publisher line once approved, e.g.:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
