@@ -1,20 +1,22 @@
 /**
  * AdSlot — placeholder ad container.
  *
- * IMPORTANT: No AdSense publisher ID or ad unit ID is baked into this project.
- * This site uses its own, separate AdSense account from any other property.
+ * The site's AdSense publisher ID (ca-pub-1515457038220036) is already wired in:
+ *   - The AdSense loader script is loaded site-wide from src/app/layout.tsx
+ *   - public/ads.txt declares the publisher line Google's crawler checks
+ *   - A google-adsense-account verification meta tag is set in layout.tsx
  *
- * To go live with real ads once the site is AdSense-approved:
- *   1. Add the AdSense script to src/app/layout.tsx <head>:
- *      <script
- *        async
- *        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
- *        crossOrigin="anonymous"
- *      />
- *   2. Replace the placeholder <div> below with the real <ins class="adsbygoogle">
- *      unit and call (adsbygoogle = window.adsbygoogle || []).push({}) client-side.
- *   3. Create /public/ads.txt with the real publisher line, e.g.
- *      google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+ * Once the account is approved, Auto ads (if enabled in the AdSense dashboard)
+ * will start placing ads automatically without any further code changes.
+ *
+ * To place a manual, fixed ad unit in a specific spot like this one instead:
+ *   1. Create an ad unit in the AdSense dashboard and copy its data-ad-slot ID
+ *   2. Replace the placeholder <div> below with:
+ *      <ins className="adsbygoogle" style={{ display: "block" }}
+ *           data-ad-client="ca-pub-1515457038220036"
+ *           data-ad-slot="YOUR_AD_SLOT_ID"
+ *           data-ad-format="auto" data-full-width-responsive="true" />
+ *      then push it client-side: (adsbygoogle = window.adsbygoogle || []).push({})
  */
 export default function AdSlot({ label = "Advertisement" }: { label?: string }) {
   return (
